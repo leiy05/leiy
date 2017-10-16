@@ -355,8 +355,8 @@ vs CODE :文本编译器，以后可以不用nodepad++了。
 GIT 
 
 1.git status 获取状态（增删改）
-2.git add . (将更新加入缓存）单个文件可以 用 git add readme.txt，相当于将文件加入提交列表
-3.git commit -m "提交的内容描述" 提交到本地
+2.git add . 把文件修改添加到暂存区；单个文件可以 用 git add readme.txt，所有可以用git add .
+3.git commit -m "提交的内容描述" 把暂存区的所有内容提交到当前分支
 4.git pull 从远程获取最新版本并merge到本地
 5.git status 查看服务器与本地的更新对照
 6.git push 将本地更新内容提交到服务器分支
