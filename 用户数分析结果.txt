@@ -352,38 +352,6 @@ vs CODE :文本编译器，以后可以不用nodepad++了。
 
 11：20 开始学习GIT
 
-GIT 
-
-1.git status 获取状态（增删改）
-2.git add . 把文件修改添加到暂存区；单个文件可以 用 git add readme.txt，所有可以用git add .
-3.git commit -m "提交的内容描述" 把暂存区的所有内容提交到当前分支
-4.git pull 从远程获取最新版本并merge到本地
-5.git status 查看服务器与本地的更新对照
-6.git push 将本地更新内容提交到服务器分支
-7.git fetch：相当于是从远程获取最新版本到本地，不会自动merge
-  git log -p master..origin/master 比较本地的master分支和origin/master分支的差别
-  git merge origin/master 合并
-  相当于：
-  git fetch origin master:tmp
-  git diff tmp 
-  git merge tmp
-8.git pull origin master 相当于git fetch 和 git merge 在实际使用中，git fetch更安全一些。
-9.git reset --hard HEAD^ 回退到上个版本，上上个是 HEAD^^，3个是HEAD~3
-  回退后，如果想回到当前版本，可以用
-  git reset --hart commitID(最后一次提交的ID）。
-  git log 记录每次提交的内容及ID，ID可用于回退的版本
-  如；git reset --hard b412f19
-  如果忘记了ID，可以用git reflog查找commitID.它记录你的每一次操作命令。
-10.git checkout --file命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令，
-   我们在后面的分支管理中会再次遇到git checkout命令。
-   如果文件修改后还没有放到暂存区，则退回到工作区的版本。
-   如果文件修改后已经添加到暂存区，但又做了修改，则退回到暂存区版本。
-11.git reset HEAD file可以把暂存区的修改撤销掉（unstage），重新放回工作区
-   如果要回退暂存区的内容，则这样做：
-   a)执行
-     git reset HEAD 1.txt，将暂存区的修改撤销掉。
-   b)执行
-     git checkout -- 1.txt ，将丢弃修改。
 
 2017-10-16
 12:13：早上调试了云南BSC系统，能发送消息到AMQ，AMQ能接收，但是还无法返回，永强正在调试。
