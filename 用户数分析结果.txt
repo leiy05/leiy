@@ -374,6 +374,8 @@ GIT
   git log 记录每次提交的内容及ID，ID可用于回退的版本
   如；git reset --hard b412f19
   如果忘记了ID，可以用git reflog查找commitID.它记录你的每一次操作命令。
+10.git checkout --file命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令，
+   我们在后面的分支管理中会再次遇到git checkout命令。
   
 
 
