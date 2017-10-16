@@ -368,7 +368,10 @@ GIT
   git diff tmp 
   git merge tmp
 8.git pull origin master 相当于git fetch 和 git merge 在实际使用中，git fetch更安全一些。
-
+9.git reset --hart HEAD^ 回退到上个版本，上上个是 HEAD^^，3个是HEAD~3
+  回退后，如果想回到当前版本，可以用
+  git reset --hart commitID(最后一次提交的ID）。
+  如果忘记了ID，可以用git reflog查找commitID.它记录你的每一次命令。
 
 
 2017-10-16
