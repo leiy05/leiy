@@ -1,7 +1,0 @@
-netsh wlan set hostednetwork mode=allow ssid=Test key=minipig
-
-netsh wlan set hostednetwork mode=allow ssid=mobile key=minipig123
-
-netsh wlan start hostednetwork
-
-netsh wlan stop hostednetwork
