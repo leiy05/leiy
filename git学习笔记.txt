@@ -40,4 +40,6 @@ GIT
 
 git 远程提交
 
-master远程提交
+
+master and feature1合并提交
+
